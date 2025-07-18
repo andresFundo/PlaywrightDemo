@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "rm -rf playwright-report && npx playwright test && npx playwright show-report"
+    "test": "rimraf playwright-report && npx playwright test && npx playwright show-report"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.53.2",
-    "@types/node": "^24.0.10"
+    "@types/node": "^24.0.10",
+    "rimraf": "^6.0.1"
   },
   "dependencies": {
     "dotenv": "^17.2.0"
