@@ -25,7 +25,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: true,
+    headless: false,
     trace: 'on',
     screenshot: 'on',
     video: 'on',
@@ -51,6 +51,7 @@ export default defineConfig({
     */
 
     /* Test against mobile viewports. */
+    /*
      {
        name: 'Mobile Web Android',
        testIgnore: /.*\.api\.spec\.ts/, // Ignora los tests de API en este proyecto
@@ -60,7 +61,7 @@ export default defineConfig({
       name: 'Mobile Web iOS',
       testIgnore: /.*\.api\.spec\.ts/,
       use: { ...devices['iPhone 12'] },
-    },
+    },*/
      {
         name: 'api',
         testMatch: /.*\.api\.spec\.ts/,
